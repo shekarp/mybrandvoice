@@ -1,4 +1,10 @@
 Mybrandvoice::Application.routes.draw do
+  resources :facebooks
+
+  resources :influences
+
+  resources :consumers
+
   resources :categories
 
   resources :brands
