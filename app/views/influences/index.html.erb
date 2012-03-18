@@ -1,0 +1,29 @@
+<h1>Listing influences</h1>
+
+<table>
+  <tr>
+    <th>Influence</th>
+    <th>Mentions</th>
+    <th>Networkreplies</th>
+    <th>Fan</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @influences.each do |influence| %>
+  <tr>
+    <td><%= influence.influence %></td>
+    <td><%= influence.mentions %></td>
+    <td><%= influence.networkReplies %></td>
+    <td><%= influence.fan %></td>
+    <td><%= link_to 'Show', influence %></td>
+    <td><%= link_to 'Edit', edit_influence_path(influence) %></td>
+    <td><%= link_to 'Destroy', influence, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Influence', new_influence_path %>

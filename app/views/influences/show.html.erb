@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Consumer ID:</b>
+  <%= @influence.consumer_id %>
+</p>
+
+<p>
+  <b>Brand:</b>
+  <%= @influence.brand.name %>
+</p>
+
+<p>
+  <b>Influence:</b>
+  <%= @influence.influence %>
+</p>
+
+<p>
+  <b>Mentions:</b>
+  <%= @influence.mentions %>
+</p>
+
+<p>
+  <b>Networkreplies:</b>
+  <%= @influence.networkReplies %>
+</p>
+
+<p>
+  <b>Fan:</b>
+  <%= @influence.fan %>
+</p>
+
+
+<%= link_to 'Edit', edit_influence_path(@influence) %> |
+<%= link_to 'Back', influences_path %>

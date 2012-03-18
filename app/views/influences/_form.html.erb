@@ -1,0 +1,37 @@
+<%= form_for [@consumer, @influence] do |f| %>
+  <% if @influence.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@influence.errors.count, "error") %> prohibited this influence from being saved:</h2>
+
+      <ul>
+      <% @influence.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div>
+      <%= collection_select(:influence, :brand_id, Brand.all, :id, :name, :prompt => true) %>
+    </div>
+
+  <div class="field">
+    <%= f.label :influence %><br />
+    <%= f.text_field :influence %>
+  </div>
+  <div class="field">
+    <%= f.label :mentions %><br />
+    <%= f.text_field :mentions %>
+  </div>
+  <div class="field">
+    <%= f.label :networkReplies %><br />
+    <%= f.text_field :networkReplies %>
+  </div>
+  <div class="field">
+    <%= f.label :fan %><br />
+    <%= f.check_box :fan %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
