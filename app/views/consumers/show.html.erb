@@ -1,0 +1,61 @@
+<div id="navigation">
+  <ul>
+    <!-- top navigation use selected class for selected item -->
+    <li class="selected">
+      <a href="/consumers/1">Influencer</a></li>
+    <li><a href="/categories">Buyer</a></li>
+    <li><a href="#">Brand Owner</a></li>
+
+  </ul>
+</div>
+
+<!-- left hand main content -->
+<div id="page">
+  <img src="<%= @consumer.picture %>"/>
+
+  <h2 id="center">Your Top Brands</h2>
+  <ol id="center">
+
+    <% @consumer.influences.each do |influence| %>
+        <li> <a href="#"><%= influence.brand.name %></a> <a href="#">(<%= influence.brand.category.title %>)</a> <%= influence.influence %> </li>
+    <% end %>
+
+  </ol>
+  <a href="/logout">Logout</a>
+</div>
+<!-- end left hand main content -->
+
+<!-- start sidebar -->
+<div id="sidebar">
+
+  <!-- sidebar h3: use <strong> for black text -->
+
+  <h3> <%= @consumer.influences.first.brand.category.title %></h3>
+  <div style="_height:300px; width:200px;background-color:#F7F7F7;font-family:Arial; border: 1px solid #F7F7F7; text-align:center;">
+    <div style="padding:5px;">
+      <% Brand.find_all_by_category_id(@consumer.influences.first.brand.category.id).each do |brand| %>
+        <a href="" style="font-size:<%= brand.influence %>px;text-decoration:none; color: #000000;"><%= brand.name %></a>  
+      <% end %>
+    </div>
+  </div>
+
+  <br/>
+
+
+  <h4> Promote your favorite brand </h4>
+  <br/>
+  <h5>Help your choice brand, spread the word</h5>
+  <br/>
+  <div id="msg"><textarea rows="10" cols="40">Tell your friends what you like Brand3 for</textarea> </div>
+
+
+  <br/>
+  <aside>
+    <fb:like href="https://www.facebook.com/pages/RackOAuth2/141477809244105" send="false" width="450" show_faces="true"></fb:like>
+  </aside>
+
+
+</div>
+<!-- end sidebar -->
+
+

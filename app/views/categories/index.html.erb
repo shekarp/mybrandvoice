@@ -1,0 +1,50 @@
+<div id="navigation">
+  <ul>
+    <!-- top navigation use selected class for selected item -->
+    <li>
+      <a href="/consumers/1">Influencer</a></li>
+    <li class="selected"><a href="/categories">Buyer</a></li>
+    <li><a href="#">Brand Owner</a></li>
+
+  </ul>
+</div>
+
+<form action="/categories/1">
+    <input type="text" value="<search>" onfocus="this.value = ''"> <input type="submit" value="go"/>
+</form>
+
+<img src="<%= @consumer.picture %>"/>
+<h3>My Friends Brands</h3>
+<div style="_height:300px; width:200px;background-color:#F7F7F7;font-family:Arial; border: 1px solid #F7F7F7; text-align:center;">
+  <div style="padding:5px;">
+    <% Brand.all().each do |brand| %>
+          <a href="" style="font-size:<%= brand.influence %>px;text-decoration:none; color: #000000;"><%= brand.name %></a>  
+    <% end %>
+  </div>
+</div>
+
+<h3>My Fave Brands</h3>
+<div style="_height:300px; width:200px;background-color:#F7F7F7;font-family:Arial; border: 1px solid #F7F7F7; text-align:center;">
+  <div style="padding:5px;">
+    <% @consumer.influences.each do |influence| %>
+          <a href="" style="font-size:<%= influence.influence %>px;text-decoration:none; color: #000000;"><%= influence.brand.name %></a>  
+    <% end %>
+  </div>
+</div>
+
+<h3>Influencers</h3>
+<div>
+    <% Brand.all().each do |brand| %>
+       <a href=""><%= brand.name %></a>  <%= brand.top_influencer.name %>
+      <br/>
+    <% end %>
+</div>
+
+<h3>Activity</h3>
+<div>
+  <% Activity.all().each do |activity| %>
+      <img src="<%= activity.consumer.picture%>" width="50"/>
+      <a href=""><%= activity.consumer.name%></a>:  <%= activity.text %>
+      <br/>
+  <% end %>
+</div>
