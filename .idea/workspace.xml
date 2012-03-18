@@ -2,28 +2,148 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb18f47-2ce4-44b8-aa16-b31a83bbe4f3" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\examples.html" afterPath="$PROJECT_DIR$/public/orangeflex/examples.html" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\images\body-bg.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/body-bg.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\images\bvlogo.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/bvlogo.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\images\bvlogo_cropped.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/bvlogo_cropped.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\images\h3-bg.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/h3-bg.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\images\header-bg.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/header-bg.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\images\item-left.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/item-left.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\images\item-right.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/item-right.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\images\nav-bg.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/nav-bg.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\images\quote.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/quote.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\images\read-more.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/read-more.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\index.html" afterPath="$PROJECT_DIR$/public/orangeflex/index.html" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\readme and license.txt" afterPath="$PROJECT_DIR$/public/orangeflex/readme and license.txt" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\orangeflex\styles.css" afterPath="$PROJECT_DIR$/public/orangeflex/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mybrandvoice.iml" afterPath="$PROJECT_DIR$/.idea/mybrandvoice.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\README" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\Rakefile" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\images\rails.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\javascripts\application.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\javascripts\brands.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\javascripts\categories.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\javascripts\consumers.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\javascripts\facebooks.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\javascripts\influences.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\stylesheets\application.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\stylesheets\brands.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\stylesheets\categories.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\stylesheets\consumers.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\stylesheets\facebooks.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\stylesheets\influences.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\assets\stylesheets\scaffolds.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\controllers\application_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\controllers\brands_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\controllers\categories_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\controllers\consumers_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\controllers\facebooks_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\controllers\influences_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\helpers\application_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\helpers\brands_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\helpers\categories_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\helpers\consumers_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\helpers\facebooks_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\helpers\influences_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\mailers\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\models\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\models\brand.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\models\category.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\models\consumer.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\models\facebook.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\models\influence.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\brands\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\brands\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\brands\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\brands\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\brands\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\categories\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\categories\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\categories\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\categories\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\categories\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\consumers\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\consumers\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\consumers\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\consumers\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\consumers\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\facebooks\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\facebooks\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\facebooks\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\facebooks\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\facebooks\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\influences\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\influences\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\influences\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\influences\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\influences\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\app\views\layouts\application.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\application.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\boot.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\database.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\environment.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\environments\development.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\environments\production.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\environments\test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\initializers\backtrace_silencers.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\initializers\inflections.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\initializers\mime_types.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\initializers\secret_token.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\initializers\session_store.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\initializers\wrap_parameters.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\locales\en.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\config\routes.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\db\migrate\20120317200113_create_brands.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\db\migrate\20120317200224_create_categories.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\db\migrate\20120317203249_create_consumers.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\db\migrate\20120317203455_create_influences.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\db\migrate\20120317205911_create_facebooks.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\db\migrate\20120317214145_add_consumer_id_to_facebook.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\db\migrate\20120317232400_add_consumer_id_to_influence.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\db\migrate\20120318000152_add_brand_id_to_influence.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\db\schema.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\db\seeds.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\doc\README_FOR_APP" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\lib\assets\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\lib\tasks\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\log\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\404.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\422.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\500.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\examples.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\images\body-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\images\bvlogo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\images\bvlogo_cropped.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\images\h3-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\images\header-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\images\item-left.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\images\item-right.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\images\nav-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\images\quote.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\images\read-more.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\readme and license.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\orangeflex\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\public\robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\script\rails" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\fixtures\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\fixtures\brands.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\fixtures\categories.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\fixtures\consumers.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\fixtures\facebooks.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\fixtures\influences.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\functional\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\functional\brands_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\functional\categories_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\functional\consumers_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\functional\facebooks_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\functional\influences_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\integration\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\performance\browsing_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\test_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\unit\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\unit\brand_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\unit\category_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\unit\consumer_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\unit\facebook_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\unit\helpers\brands_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\unit\helpers\categories_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\unit\helpers\consumers_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\unit\helpers\facebooks_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\unit\helpers\influences_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\test\unit\influence_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\vendor\assets\stylesheets\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Sites\mybrandvoice\vendor\plugins\.gitkeep" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/brands_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/brands_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/brands/show.html.erb" afterPath="$PROJECT_DIR$/app/views/brands/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/consumers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/consumers/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="mybrandvoice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,105 +164,7 @@
     <favorites_list name="mybrandvoice" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="influences_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/influences_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="38" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="brand.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/brand.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/consumers/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="51" selection-start="402" selection-end="402" vertical-scroll-proportion="-7.1153846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/orangeflex/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="65" selection-start="1279" selection-end="1279" vertical-scroll-proportion="-4.1538463">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/brands/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="80" selection-end="80" vertical-scroll-proportion="-2.6153846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="88" selection-start="745" selection-end="745" vertical-scroll-proportion="-4.1538463">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="71" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/brands/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="-0.0">
-              <folding>
-                <marker date="1332032501219" expanded="true" signature="104:339" placeholder="..." />
-                <marker date="1332032501219" expanded="true" signature="218:328" placeholder="..." />
-                <marker date="1332032501219" expanded="true" signature="374:444" placeholder="..." />
-                <marker date="1332032501219" expanded="true" signature="466:536" placeholder="..." />
-                <marker date="1332032501219" expanded="true" signature="558:634" placeholder="..." />
-                <marker date="1332032501219" expanded="true" signature="658:687" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/orangeflex/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="31" selection-start="648" selection-end="648" vertical-scroll-proportion="0.3791209">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="brands.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/brands.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -228,228 +250,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="orangeflex" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="consumers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="brands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mybrandvoice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -478,16 +281,15 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="ruby.project.structure" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -712,18 +514,22 @@
       <created>1332006731825</created>
       <updated>1332006731825</updated>
     </task>
+    <task id="LOCAL-00001" summary="adopted new design">
+      <created>1332052862355</created>
+      <updated>1332052862355</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295082" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25417298" sideWeight="0.6704918" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25872535" sideWeight="0.6704918" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -733,6 +539,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -773,7 +580,7 @@
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="LAST_COMMIT_MESSAGE" value="adopted new design" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -786,99 +593,25 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="adopted new design" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/influences/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/influences/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="37" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/brands_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="30" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/influences_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="38" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/brand.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="13" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="71" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/brands.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/brands/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/brands/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="80" selection-end="80" vertical-scroll-proportion="-2.6153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/consumers/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="51" selection-start="402" selection-end="402" vertical-scroll-proportion="-7.1153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/orangeflex/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="65" selection-start="1279" selection-end="1279" vertical-scroll-proportion="-4.1538463">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="88" selection-start="745" selection-end="745" vertical-scroll-proportion="-4.1538463">
-          <folding />
-        </state>
+        <state line="44" column="65" selection-start="1279" selection-end="1279" vertical-scroll-proportion="-4.1538463" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/orangeflex/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="31" selection-start="648" selection-end="648" vertical-scroll-proportion="0.3791209">
-          <folding />
-        </state>
+        <state line="46" column="22" selection-start="766" selection-end="766" vertical-scroll-proportion="0.6692708" />
       </provider>
     </entry>
   </component>
