@@ -3,11 +3,17 @@ Mybrandvoice::Application.routes.draw do
 
   resources :influences
 
-  resources :consumers
+  resources :consumers do
+    resources :influences
+  end
 
-  resources :categories
+  resources :categories do
+    resources :brands
+  end
 
-  resources :brands
+  resources :brands do
+    resources :categories
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
