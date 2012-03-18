@@ -36,7 +36,7 @@ table {
 	width:100%;
 }
 table tr th {
-	background:#ff6600 url('images/nav-bg.png') repeat-x scroll 0 50%;
+	background:#ff6600 url('/orangeflex/images/nav-bg.png') repeat-x scroll 0 50%;
 	padding:5px 10px;
 	color:#ffffff;
 	font-weight:bold;
@@ -56,7 +56,7 @@ blockquote {
 	font-style:italic;
 	letter-spacing:1px;
 	margin:15px 0 15px 30px;
-	background:#ffffff url('images/quote.png') no-repeat scroll top left;
+	background:#ffffff url('/orangeflex/images/quote.png') no-repeat scroll top left;
 	padding:10px 0 10px 55px;
 }
 code {
@@ -71,7 +71,7 @@ code {
 /* page wrapper */
 div#wrap {
 	width:80%;
-	background:#ffffff url('images/header-bg.png') no-repeat scroll top left;
+	background:#ffffff url('/orangeflex/images/header-bg.png') no-repeat scroll top left;
 	margin:0 auto;
 	padding:0;
 }
@@ -116,7 +116,7 @@ img#logo {
 /* navigation menu */
 div#navigation {
 	height:55px;
-	background:#FF9900 url('images/nav-bg.png') repeat-x scroll bottom left;
+	background:#FF9900 url('/orangeflex/images/nav-bg.png') repeat-x scroll bottom left;
 	border-top:1px solid #D65600;
 }
 div#navigation ul {
@@ -131,7 +131,7 @@ div#navigation ul li {
 	float:left;
 }
 div#navigation ul li.selected {
-	background:#ffffff url('images/item-right.png') no-repeat scroll bottom right;
+	background:#ffffff url('/orangeflex/images/item-right.png') no-repeat scroll bottom right;
 	position:relative;
 	top:-1px;
 }
@@ -146,14 +146,14 @@ div#navigation ul li a {
 	padding:15px 20px 9px;
 }
 div#navigation ul li.selected a {
-	background:transparent url('images/item-left.png') no-repeat scroll bottom left;
+	background:transparent url('/orangeflex/images/item-left.png') no-repeat scroll bottom left;
 	color:#ff6600;
 	padding:16px 20px 9px;
 }
 
 /* page content area */
 div#content {
-	background:#ffffff url('images/body-bg.png') repeat-x scroll top left;
+	background:#ffffff url('/orangeflex/images/body-bg.png') repeat-x scroll top left;
 	border-top:1px solid #D65600;
 }
 
@@ -211,7 +211,7 @@ div#sidebar table tr td#feed{
 }
 
 div#sidebar h3 {
-	background:transparent url('images/h3-bg.png') no-repeat scroll bottom left;
+	background:transparent url('/orangeflex/images/h3-bg.png') no-repeat scroll bottom left;
 	color:#ff6600;
 	letter-spacing:0;
 	font-size:1.4em;
@@ -264,7 +264,7 @@ div#sidebar ul.blocklist li a {
 	padding:5px 10px;
 }
 div#sidebar ul.blocklist li.selected-item a {
-	background:#ff6600 url('images/nav-bg.png') repeat-x scroll 0 50%;
+	background:#ff6600 url('/orangeflex/images/nav-bg.png') repeat-x scroll 0 50%;
 	color:#ffffff;
 	border:1px solid #D65600;
 }
