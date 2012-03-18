@@ -1,0 +1,375 @@
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "brands"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "brands" ("name", "page", "website", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-03-18 00:38:20', '2012-03-18 00:38:20', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "brands" ("name", "page", "website", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2012-03-18 00:38:20', '2012-03-18 00:38:20', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "categories"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "categories" ("title", "created_at", "updated_at", "id") VALUES ('MyString', '2012-03-18 00:38:20', '2012-03-18 00:38:20', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "categories" ("title", "created_at", "updated_at", "id") VALUES ('MyString', '2012-03-18 00:38:20', '2012-03-18 00:38:20', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "consumers"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "consumers" ("name", "gender", "age", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-03-18 00:38:20', '2012-03-18 00:38:20', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "consumers" ("name", "gender", "age", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 1, '2012-03-18 00:38:20', '2012-03-18 00:38:20', 298486374)[0m
+  [1m[35mFixture Delete (0.0ms)[0m  DELETE FROM "facebooks"
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "facebooks" ("appid", "appsecrect", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-03-18 00:38:20', '2012-03-18 00:38:20', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "facebooks" ("appid", "appsecrect", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', '2012-03-18 00:38:20', '2012-03-18 00:38:20', 298486374)
+  [1m[36mFixture Delete (0.0ms)[0m  [1mDELETE FROM "influences"[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "influences" ("influence", "mentions", "networkReplies", "fan", "created_at", "updated_at", "id") VALUES (NULL, NULL, NULL, 'f', '2012-03-18 00:38:20', '2012-03-18 00:38:20', 980190962)
+  [1m[36mFixture Insert (0.0ms)[0m  [1mINSERT INTO "influences" ("influence", "mentions", "networkReplies", "fan", "created_at", "updated_at", "id") VALUES (NULL, NULL, NULL, 'f', '2012-03-18 00:38:20', '2012-03-18 00:38:20', 298486374)[0m
+  [1m[35mBrand Load (0.0ms)[0m  SELECT "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (27.0ms)[0m  [1mSELECT COUNT(*) FROM "brands" [0m
+  Processing by BrandsController#create as HTML
+  Parameters: {"brand"=>{"id"=>"980190962", "name"=>"MyString", "page"=>"MyString", "website"=>"MyString", "created_at"=>"2012-03-18 00:38:20 UTC", "updated_at"=>"2012-03-18 00:38:20 UTC"}}
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "brands" ("created_at", "name", "page", "updated_at", "website") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 18 Mar 2012 00:38:20 UTC +00:00], ["name", "MyString"], ["page", "MyString"], ["updated_at", Sun, 18 Mar 2012 00:38:20 UTC +00:00], ["website", "MyString"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/brands/980190963
+Completed 302 Found in 112ms
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "brands" [0m
+  [1m[35mBrand Load (0.0ms)[0m  SELECT "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "brands" [0m
+  Processing by BrandsController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mBrand Load (0.0ms)[0m  SELECT "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories" INNER JOIN "brands_categories" ON "categories"."id" = "brands_categories"."category_id" WHERE "brands_categories"."brand_id" = 980190962
+SQLite3::SQLException: no such table: brands_categories: SELECT "categories".* FROM "categories" INNER JOIN "brands_categories" ON "categories"."id" = "brands_categories"."category_id" WHERE "brands_categories"."brand_id" = 980190962
+  [1m[36m (0.0ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 184ms
+  [1m[35mBrand Load (0.0ms)[0m  SELECT "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by BrandsController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mBrand Load (1.0ms)[0m  [1mSELECT "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Rendered brands/_form.html.erb (3.0ms)
+Completed 200 OK in 95ms (Views: 94.0ms | ActiveRecord: 1.0ms)
+  [1m[35mBrand Load (0.0ms)[0m  SELECT "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by BrandsController#index as HTML
+  [1m[36mBrand Load (1.0ms)[0m  [1mSELECT "brands".* FROM "brands" [0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+  [1m[35mBrand Load (1.0ms)[0m  SELECT "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by BrandsController#new as HTML
+Rendered brands/_form.html.erb (2.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[36mBrand Load (0.0ms)[0m  [1mSELECT "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by BrandsController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mBrand Load (0.0ms)[0m  SELECT "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1  [["id", "980190962"]]
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+  [1m[36mBrand Load (0.0ms)[0m  [1mSELECT "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by BrandsController#update as HTML
+  Parameters: {"brand"=>{"id"=>"980190962", "name"=>"MyString", "page"=>"MyString", "website"=>"MyString", "created_at"=>"2012-03-18 00:38:20 UTC", "updated_at"=>"2012-03-18 00:38:20 UTC"}, "id"=>"980190962"}
+  [1m[35mBrand Load (0.0ms)[0m  SELECT "brands".* FROM "brands" WHERE "brands"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/brands/980190962
+Completed 302 Found in 2ms
+  [1m[36mCategory Load (1.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "categories" 
+  Processing by CategoriesController#create as HTML
+  Parameters: {"category"=>{"id"=>"980190962", "title"=>"MyString", "created_at"=>"2012-03-18 00:38:20 UTC", "updated_at"=>"2012-03-18 00:38:20 UTC"}}
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "categories" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Sun, 18 Mar 2012 00:38:20 UTC +00:00], ["title", "MyString"], ["updated_at", Sun, 18 Mar 2012 00:38:20 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/categories/980190963
+Completed 302 Found in 4ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "categories" 
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "categories" 
+  Processing by CategoriesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mBrand Load (0.0ms)[0m  [1mSELECT "brands".* FROM "brands" INNER JOIN "brands_categories" ON "brands"."id" = "brands_categories"."brand_id" WHERE "brands_categories"."category_id" = 980190962[0m
+SQLite3::SQLException: no such table: brands_categories: SELECT "brands".* FROM "brands" INNER JOIN "brands_categories" ON "brands"."id" = "brands_categories"."brand_id" WHERE "brands_categories"."category_id" = 980190962
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 3ms
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", "980190962"]]
+Rendered categories/_form.html.erb (2.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories" 
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by CategoriesController#new as HTML
+Rendered categories/_form.html.erb (2.0ms)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by CategoriesController#update as HTML
+  Parameters: {"category"=>{"id"=>"980190962", "title"=>"MyString", "created_at"=>"2012-03-18 00:38:20 UTC", "updated_at"=>"2012-03-18 00:38:20 UTC"}, "id"=>"980190962"}
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/categories/980190962
+Completed 302 Found in 3ms
+  [1m[35mConsumer Load (0.0ms)[0m  SELECT "consumers".* FROM "consumers" WHERE "consumers"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "consumers" [0m
+  Processing by ConsumersController#create as HTML
+  Parameters: {"consumer"=>{"id"=>"980190962", "name"=>"MyString", "gender"=>"MyString", "age"=>"1", "created_at"=>"2012-03-18 00:38:20 UTC", "updated_at"=>"2012-03-18 00:38:20 UTC"}}
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (1.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "consumers" ("age", "created_at", "gender", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["age", 1], ["created_at", Sun, 18 Mar 2012 00:38:20 UTC +00:00], ["gender", "MyString"], ["name", "MyString"], ["updated_at", Sun, 18 Mar 2012 00:38:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/consumers/980190963
+Completed 302 Found in 5ms
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "consumers" [0m
+  [1m[35mConsumer Load (0.0ms)[0m  SELECT "consumers".* FROM "consumers" WHERE "consumers"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "consumers" [0m
+  Processing by ConsumersController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mConsumer Load (0.0ms)[0m  SELECT "consumers".* FROM "consumers" WHERE "consumers"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "consumers" WHERE "consumers"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consumers
+Completed 302 Found in 3ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "consumers" 
+  [1m[36mConsumer Load (0.0ms)[0m  [1mSELECT "consumers".* FROM "consumers" WHERE "consumers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ConsumersController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mConsumer Load (0.0ms)[0m  SELECT "consumers".* FROM "consumers" WHERE "consumers"."id" = ? LIMIT 1  [["id", "980190962"]]
+Rendered consumers/_form.html.erb (3.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[36mConsumer Load (0.0ms)[0m  [1mSELECT "consumers".* FROM "consumers" WHERE "consumers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ConsumersController#index as HTML
+  [1m[35mConsumer Load (1.0ms)[0m  SELECT "consumers".* FROM "consumers" 
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 1.0ms)
+  [1m[36mConsumer Load (1.0ms)[0m  [1mSELECT "consumers".* FROM "consumers" WHERE "consumers"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by ConsumersController#new as HTML
+Rendered consumers/_form.html.erb (2.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35mConsumer Load (0.0ms)[0m  SELECT "consumers".* FROM "consumers" WHERE "consumers"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by ConsumersController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mConsumer Load (0.0ms)[0m  [1mSELECT "consumers".* FROM "consumers" WHERE "consumers"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+ERROR: compiling _app_views_consumers_show_html_erb__407589738_38364192 RAISED C:/Users/Ralf/Documents/Projects/mybrandvoice/app/views/consumers/show.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/Ralf/Documents/Projects/mybrandvoice/app/views/consumers/show.html.erb:28: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_consumers_show_html_erb__407589738_38364192(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "consumers/show";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p id="notice">');@output_buffer.append= ( notice );@output_buffer.safe_concat('</p>
+
+<p>
+  <b>Name:</b>
+  ');@output_buffer.append= ( @consumer.name );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  <b>Gender:</b>
+  ');@output_buffer.append= ( @consumer.gender );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+<p>
+  <b>Age:</b>
+  ');@output_buffer.append= ( @consumer.age );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+
+'); @consumer.influences.each do |influence| 
+@output_buffer.safe_concat('    '); if influence.brand influence.brand.name ;@output_buffer.safe_concat('<br/>
+'); end 
+@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to "New influence", new_consumer_influence_path(@consumer) );@output_buffer.safe_concat('
+');@output_buffer.append= ( link_to 'Edit', edit_consumer_path(@consumer) );@output_buffer.safe_concat(' |
+');@output_buffer.append= ( link_to 'Back', consumers_path );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `module_eval'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:309:in `compile'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:217:in `compile!'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:170:in `block in render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/template.rb:169:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/template_renderer.rb:9:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:36:in `render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_view/renderer/renderer.rb:17:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:120:in `_render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:99:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:268:in `block in retrieve_response_from_mimes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:195:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/mime_responds.rb:195:in `respond_to'
+C:/Users/Ralf/Documents/Projects/mybrandvoice/app/controllers/consumers_controller.rb:18:in `show'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:167:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:416:in `_run__433313866__process_action__634661283__callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `block in instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/notifications.rb:53:in `instrument'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.1.3/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/base.rb:121:in `process'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/abstract_controller/rendering.rb:45:in `process'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/metal/testing.rb:17:in `process_with_new_base_test'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/test_case.rb:449:in `process'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/test_case.rb:49:in `process'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.1.3/lib/action_controller/test_case.rb:365:in `get'
+C:/Users/Ralf/Documents/Projects/mybrandvoice/test/functional/consumers_controller_test.rb:28:in `block in <class:ConsumersControllerTest>'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb:949:in `run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/test/unit/testcase.rb:17:in `run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/testing/setup_and_teardown.rb:35:in `block in run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:444:in `_run_setup_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.1.3/lib/active_support/testing/setup_and_teardown.rb:34:in `run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb:787:in `block in _run_suite'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb:780:in `map'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb:780:in `_run_suite'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/test/unit.rb:565:in `block in _run_suites'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/test/unit.rb:563:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/test/unit.rb:563:in `_run_suites'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb:746:in `_run_anything'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb:909:in `run_tests'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb:896:in `block in _run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb:895:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb:895:in `_run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/minitest/unit.rb:884:in `run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/test/unit.rb:21:in `run'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/test/unit.rb:326:in `block (2 levels) in autorun'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/test/unit.rb:27:in `run_once'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/test/unit.rb:325:in `block in autorun'
+Completed 500 Internal Server Error in 32ms
+  [1m[35mConsumer Load (1.0ms)[0m  SELECT "consumers".* FROM "consumers" WHERE "consumers"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by ConsumersController#update as HTML
+  Parameters: {"consumer"=>{"id"=>"980190962", "name"=>"MyString", "gender"=>"MyString", "age"=>"1", "created_at"=>"2012-03-18 00:38:20 UTC", "updated_at"=>"2012-03-18 00:38:20 UTC"}, "id"=>"980190962"}
+  [1m[36mConsumer Load (0.0ms)[0m  [1mSELECT "consumers".* FROM "consumers" WHERE "consumers"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/consumers/980190962
+Completed 302 Found in 3ms
+  [1m[35mFacebook Load (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "facebooks" [0m
+  Processing by FacebooksController#create as HTML
+  Parameters: {"facebook"=>{"id"=>"980190962", "appid"=>"MyString", "appsecrect"=>"MyString", "created_at"=>"2012-03-18 00:38:20 UTC", "updated_at"=>"2012-03-18 00:38:20 UTC", "consumer_id"=>nil}}
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "facebooks" ("appid", "appsecrect", "consumer_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["appid", "MyString"], ["appsecrect", "MyString"], ["consumer_id", nil], ["created_at", Sun, 18 Mar 2012 00:38:20 UTC +00:00], ["updated_at", Sun, 18 Mar 2012 00:38:20 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/facebooks/980190963
+Completed 302 Found in 4ms
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "facebooks" [0m
+  [1m[35mFacebook Load (1.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "facebooks" [0m
+  Processing by FacebooksController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mFacebook Load (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (1.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "facebooks" WHERE "facebooks"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/facebooks
+Completed 302 Found in 2ms
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "facebooks" 
+  [1m[36mFacebook Load (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by FacebooksController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mFacebook Load (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = ? LIMIT 1  [["id", "980190962"]]
+Rendered facebooks/_form.html.erb (3.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[36mFacebook Load (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by FacebooksController#index as HTML
+  [1m[35mFacebook Load (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" 
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[36mFacebook Load (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by FacebooksController#new as HTML
+Rendered facebooks/_form.html.erb (2.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35mFacebook Load (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by FacebooksController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mFacebook Load (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[35mFacebook Load (0.0ms)[0m  SELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by FacebooksController#update as HTML
+  Parameters: {"facebook"=>{"id"=>"980190962", "appid"=>"MyString", "appsecrect"=>"MyString", "created_at"=>"2012-03-18 00:38:20 UTC", "updated_at"=>"2012-03-18 00:38:20 UTC", "consumer_id"=>nil}, "id"=>"980190962"}
+  [1m[36mFacebook Load (0.0ms)[0m  [1mSELECT "facebooks".* FROM "facebooks" WHERE "facebooks"."id" = ? LIMIT 1[0m  [["id", "980190962"]]
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+WARNING: Can't mass-assign protected attributes: id
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/facebooks/980190962
+Completed 302 Found in 2ms
+  [1m[35mInfluence Load (0.0ms)[0m  SELECT "influences".* FROM "influences" WHERE "influences"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "influences" [0m
+  Processing by InfluencesController#create as HTML
+  Parameters: {"influence"=>{"id"=>"980190962", "influence"=>nil, "mentions"=>nil, "networkReplies"=>nil, "fan"=>false, "created_at"=>"2012-03-18 00:38:20 UTC", "updated_at"=>"2012-03-18 00:38:20 UTC", "consumer_id"=>nil, "brand_id"=>nil}}
+Completed 404 Not Found in 1ms
+  [1m[35mInfluence Load (0.0ms)[0m  SELECT "influences".* FROM "influences" WHERE "influences"."id" = ? LIMIT 1  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "influences" [0m
+  Processing by InfluencesController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mInfluence Load (0.0ms)[0m  SELECT "influences".* FROM "influences" WHERE "influences"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  DELETE FROM "influences" WHERE "influences"."id" = ?  [["id", 980190962]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/influences
+Completed 302 Found in 2ms
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "influences" 
+  [1m[36mInfluence Load (0.0ms)[0m  [1mSELECT "influences".* FROM "influences" WHERE "influences"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by InfluencesController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mInfluence Load (0.0ms)[0m  SELECT "influences".* FROM "influences" WHERE "influences"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36mBrand Load (0.0ms)[0m  [1mSELECT "brands".* FROM "brands" [0m
+Rendered influences/_form.html.erb (15.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+  [1m[35mInfluence Load (0.0ms)[0m  SELECT "influences".* FROM "influences" WHERE "influences"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by InfluencesController#index as HTML
+  [1m[36mInfluence Load (0.0ms)[0m  [1mSELECT "influences".* FROM "influences" [0m
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35mInfluence Load (0.0ms)[0m  SELECT "influences".* FROM "influences" WHERE "influences"."id" = ? LIMIT 1  [["id", 980190962]]
+  Processing by InfluencesController#new as HTML
+Completed 404 Not Found in 1ms
+  [1m[36mInfluence Load (0.0ms)[0m  [1mSELECT "influences".* FROM "influences" WHERE "influences"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by InfluencesController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[35mInfluence Load (0.0ms)[0m  SELECT "influences".* FROM "influences" WHERE "influences"."id" = ? LIMIT 1  [["id", "980190962"]]
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  [1m[36mInfluence Load (0.0ms)[0m  [1mSELECT "influences".* FROM "influences" WHERE "influences"."id" = ? LIMIT 1[0m  [["id", 980190962]]
+  Processing by InfluencesController#update as HTML
+  Parameters: {"influence"=>{"id"=>"980190962", "influence"=>nil, "mentions"=>nil, "networkReplies"=>nil, "fan"=>false, "created_at"=>"2012-03-18 00:38:20 UTC", "updated_at"=>"2012-03-18 00:38:20 UTC", "consumer_id"=>nil, "brand_id"=>nil}, "id"=>"980190962"}
+  [1m[35mInfluence Load (0.0ms)[0m  SELECT "influences".* FROM "influences" WHERE "influences"."id" = ? LIMIT 1  [["id", "980190962"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+WARNING: Can't mass-assign protected attributes: id
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/influences/980190962
+Completed 302 Found in 3ms

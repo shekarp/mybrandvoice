@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Appid:</b>
+  <%= @facebook.appid %>
+</p>
+
+<p>
+  <b>Appsecrect:</b>
+  <%= @facebook.appsecrect %>
+</p>
+
+
+<%= link_to 'Edit', edit_facebook_path(@facebook) %> |
+<%= link_to 'Back', facebooks_path %>

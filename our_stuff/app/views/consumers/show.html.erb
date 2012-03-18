@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+
+<!-- left hand main content -->
+<div id="page">
+
+  <h2 id="center">Your Top Brands</h2>
+  <ol id="center">
+
+    <% @consumer.influences.each do |influence| %>
+        <li> <a href="#"><%= influence.brand.name %></a> <a href="#">(<%= influence.brand.category.title %>)</a> <%= influence.influence %> </li>
+    <% end %>
+
+  </ol>
+</div>
+<!-- end left hand main content -->
+
+<!-- start sidebar -->
+<div id="sidebar">
+
+  <!-- sidebar h3: use <strong> for black text -->
+
+  <h3> <%= @consumer.influences.first.brand.category.title %></h3>
+  <div style="_height:300px; width:200px;background-color:#F7F7F7;font-family:Arial; border: 1px solid #F7F7F7; text-align:center;">
+    <div style="padding:5px;">
+      <% Brand.find_all_by_category_id(@consumer.influences.first.brand.category.id).each do |brand| %>
+        <a href="" style="font-size:<%= brand.influence %>px;text-decoration:none; color: #000000;"><%= brand.name %></a>  
+      <% end %>
+    </div>
+  </div>
+
+  <br/>
+
+
+  <h4> Promote your favorite brand </h4>
+  <br/>
+  <h5>Help your choice brand, spread the word</h5>
+  <br/>
+  <div id="msg"><textarea rows="10" cols="40">Tell your friends what you like Brand3 for</textarea> </div>
+
+
+  <br/>
+  <iframe src="https://www.facebook.com/plugins/like.php?href=YOUR_URL"
+          scrolling="no" frameborder="0"
+          style="border:none; width:450px; height:80px"></iframe>
+
+  <%= link_to "New influence", new_consumer_influence_path(@consumer) %>
+  <%= link_to 'Edit', edit_consumer_path(@consumer) %> |
+  <%= link_to 'Back', consumers_path %>
+
+</div>
+<!-- end sidebar -->
+
+
