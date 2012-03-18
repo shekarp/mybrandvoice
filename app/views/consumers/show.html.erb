@@ -9,6 +9,12 @@
   </ul>
 </div>
 
+<div style="margin-top:10px;margin-right:20px;text-align:right;">
+  <form action="/categories/1">
+    <input type="text" value="search for brands, people or products" onfocus="this.value = ''"> <input type="submit" value="go"/>
+  </form>
+</div>
+
 <!-- left hand main content -->
 <div id="page">
   <img src="<%= @consumer.picture %>"/>
@@ -17,11 +23,10 @@
   <ol id="center">
 
     <% @consumer.influences.each do |influence| %>
-        <li> <a href="#"><%= influence.brand.name %></a> <a href="#">(<%= influence.brand.category.title %>)</a> <%= influence.influence %> </li>
+        <li><img src="<%= influence.brand.picture %>" height="20"/> <strong><a href="#"><%= influence.brand.name %></a> <a href="#">(<%= influence.brand.category.title %>)</a> <%= influence.influence %> </strong></li>
     <% end %>
 
   </ol>
-  <a href="/logout">Logout</a>
 </div>
 <!-- end left hand main content -->
 
@@ -34,7 +39,7 @@
   <div style="_height:300px; width:200px;background-color:#F7F7F7;font-family:Arial; border: 1px solid #F7F7F7; text-align:center;">
     <div style="padding:5px;">
       <% Brand.find_all_by_category_id(@consumer.influences.first.brand.category.id).each do |brand| %>
-        <a href="" style="font-size:<%= brand.influence %>px;text-decoration:none; color: #000000;"><%= brand.name %></a>  
+        <img src="<%= brand.picture %>" height="<%= brand.influence %>"/> <a href="" style="font-size:<%= brand.influence %>px;text-decoration:none; color: #000000;"><%= brand.name %></a>  
       <% end %>
     </div>
   </div>
@@ -42,11 +47,11 @@
   <br/>
 
 
-  <h4> Promote your favorite brand </h4>
+  <h3> Promote your favorite brand </h3>
   <br/>
   <h5>Help your choice brand, spread the word</h5>
   <br/>
-  <div id="msg"><textarea rows="10" cols="40">Tell your friends what you like Brand3 for</textarea> </div>
+  <div id="msg"><textarea rows="10" cols="40">Tell your friends what you like  <%= @consumer.influences.first.brand.name %> for</textarea> </div>
 
 
   <br/>

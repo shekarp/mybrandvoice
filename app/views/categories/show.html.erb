@@ -9,46 +9,102 @@
   </ul>
 </div>
 
-<form action="1">
-  <input type="text" value="<search>" onfocus="this.value = ''"> <input type="submit" value="go"/>
-</form>
+<div style="margin-top:10px;margin-right:20px;text-align:right;">
+  <form action="/categories/1">
+    <input type="text" value="search for brands, people or products" onfocus="this.value = ''"> <input type="submit" value="go"/>
+  </form>
+</div>
 
 
-<img src="<%= @consumer.picture %>"/>
-<h3>My Friends Brands</h3>
-<div style="_height:300px; width:200px;background-color:#F7F7F7;font-family:Arial; border: 1px solid #F7F7F7; text-align:center;">
-  <div style="padding:5px;">
-    <% @category.brands.each do |brand| %>
-          <a href="" style="font-size:<%= brand.influence %>px;text-decoration:none; color: #000000;"><%= brand.name %></a>  
-    <% end %>
+
+<!-- left hand main content -->
+  <div id="page">
+    <table>
+      <tr>
+        <td>
+          <img src="<%= @consumer.picture %>" align="left">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3> My friends' brands</h3>
+        <td>
+      </tr>
+      <tr>
+        <td>
+          <ol id="center">
+            <% @category.brands.each do |brand| %>
+                <li> <img src="<%= brand.picture %>" height="20"/><a href="#"><%= brand.top_influencer.name %>  </a> (<a href="#" title="Brand1"><%= brand.name %></a>) </l1>
+            <% end %>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>My favorite brands</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div style="_height:300px; width:200px;background-color:#F7F7F7;font-family:Arial; border: 1px solid #F7F7F7; text-align:center;">
+            <div style="padding:5px;">
+              <% @consumer.influences.each do |influence| %>
+                  <% if influence.brand.category_id = @category.id %>
+                        <img src="<%= influence.brand.picture %>" height="<%= influence.influence %>"/> <a href="" style="font-size:<%= influence.influence %>px;text-decoration:none; color: #000000;"><%= influence.brand.name %></a>  
+                  <% end %>
+              <% end %>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
   </div>
-</div>
+  <!-- end left hand main content -->
 
-<h3>My Fave Brands</h3>
-<div style="_height:300px; width:200px;background-color:#F7F7F7;font-family:Arial; border: 1px solid #F7F7F7; text-align:center;">
-  <div style="padding:5px;">
-    <% @consumer.influences.each do |influence| %>
-        <% if influence.brand.category_id = @category.id %>
-          <a href="" style="font-size:<%= influence.influence %>px;text-decoration:none; color: #000000;"><%= influence.brand.name %></a>  
-        <% end %>
-    <% end %>
+  <!-- start sidebar -->
+  <div id="sidebar">
+    <table >
+      <tr>
+        <td><span>Feeds</span></td>
+        <td></td>
+
+      </tr>
+
+      <% Activity.find_all_by_category_id(@category.id).each do |activity| %>
+
+          <tr>
+            <td width="50pt" valign="top">
+              <img border="0" src="<%= activity.consumer.picture%>" width=50 align="top">
+            </td>
+            <td id="feed">
+              <strong><%= activity.consumer.name%></strong>
+              <p>
+                <%= activity.text.html_safe %>
+              </p>
+            </td>
+          </tr>
+
+      <% end %>
+
+
+
+    </table>
   </div>
-</div>
 
-<h3>Influencers</h3>
-<div>
-  <% Brand.find_all_by_category_id(@category.id).each do |brand| %>
-      <a href=""><%= brand.name %></a>  <%= brand.top_influencer.name %>
-      <br/>
-  <% end %>
-</div>
+  <div id="right">
+    <table>
+      <tr>
+        <td><span>Influencers</span></td>
+      </tr>
 
-<h3>Activity</h3>
-<div>
-  <% Activity.find_all_by_category_id(@category.id).each do |activity| %>
-      <img src="<%= activity.consumer.picture%>" width="50"/>
-      <a href=""><%= activity.consumer.name%></a>:  <%= activity.text %>
-      <br/>
-  <% end %>
-</div>
+      <% Brand.find_all_by_category_id(@category.id).each do |brand| %>
+          <tr>
+            <td><img src="<%= brand.picture %>" height="<%= brand.influence %>"/> <a href="#"><%= brand.name %></a></td>
+            <td><a href="#"><%= brand.top_influencer.name %></a></td>
+          </tr>
+      <% end %>
+    </table>
+  </div>
+
+
 

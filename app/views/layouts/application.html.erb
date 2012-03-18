@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-  <title>MyBrandVoice - </title>
+  <title>Brandlify</title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
 
   <link rel="stylesheet" href="/orangeflex/styles.css" type="text/css" />
@@ -19,7 +19,7 @@
         <tr>
           <td width="126" > <img id="logo" src="/orangeflex/images/bvlogo_cropped.png"/></td>
           <td>
-            <h1><a id="cmpn" href="#"><%= @consumer && @consumer.name ? @consumer.name + "'s" : 'my' %><span>brandvoice</span></a></h1>
+            <h1><a id="cmpn" href="#"><%= @consumer && @consumer.name ? @consumer.name + "'s" : '' %><span>brandlify</span></a></h1>
             <!-- sub title, text here is transformed to lower case -->
             <h2>You Decide Now</h2>
           </td>
@@ -28,6 +28,9 @@
     </div>
   </div>
 
+  <div style="text-align: right">
+    <a href="/logout">Logout</a>
+  </div>
 
   <div id="content">
 

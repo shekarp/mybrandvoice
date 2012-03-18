@@ -170,7 +170,7 @@ div#page h2 {
 }
 
 div#page h2#center{
-	text-align: center;
+	text-align: left;
 	padding: 20px 0 0 0;
 }
 
@@ -207,7 +207,7 @@ div#sidebar table tr td#feedowner{
 }
 
 div#sidebar table tr td#feed{
-	font-size:0.5em;
+	font-size:0.9em;
 }
 
 div#sidebar h3 {

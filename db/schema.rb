@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120318203208) do
+ActiveRecord::Schema.define(:version => 20120318222552) do
 
   create_table "access_tokens", :force => true do |t|
     t.integer  "account_id"
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(:version => 20120318203208) do
     t.datetime "updated_at"
     t.integer  "category_id"
     t.integer  "influence"
+    t.string   "picture"
   end
 
   create_table "categories", :force => true do |t|
