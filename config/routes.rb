@@ -12,4 +12,20 @@ Mybrandvoice::Application.routes.draw do
   resource :session, :only => :new
   resource :account, :only => :update
   root :to => 'accounts#new'
+
+  resources :facebooks
+
+  resources :influences
+
+  resources :consumers do
+    resources :influences
+  end
+
+  resources :categories do
+    resources :brands
+  end
+
+  resources :brands do
+    resources :categories
+  end
 end

@@ -1,6 +1,6 @@
 class CreateInfluences < ActiveRecord::Migration
-  def change
-    create_table :influences do |t|
+  def self.up
+  create_table :influences do |t|
       t.integer :influence
       t.integer :mentions
       t.integer :networkReplies

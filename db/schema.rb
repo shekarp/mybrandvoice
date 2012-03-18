@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110326070517) do
+ActiveRecord::Schema.define(:version => 20120318171115) do
 
   create_table "access_tokens", :force => true do |t|
     t.integer  "account_id"
@@ -48,6 +48,22 @@ ActiveRecord::Schema.define(:version => 20110326070517) do
     t.datetime "updated_at"
   end
 
+  create_table "brands", :force => true do |t|
+    t.string   "name"
+    t.string   "page"
+    t.string   "website"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "category_id"
+    t.integer  "influence"
+  end
+
+  create_table "categories", :force => true do |t|
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "clients", :force => true do |t|
     t.integer  "account_id"
     t.string   "identifier"
@@ -57,6 +73,33 @@ ActiveRecord::Schema.define(:version => 20110326070517) do
     t.string   "redirect_uri"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "consumers", :force => true do |t|
+    t.string   "name"
+    t.string   "gender"
+    t.integer  "age"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "facebooks", :force => true do |t|
+    t.string   "appid"
+    t.string   "appsecrect"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "consumer_id"
+  end
+
+  create_table "influences", :force => true do |t|
+    t.integer  "influence"
+    t.integer  "mentions"
+    t.integer  "networkReplies"
+    t.boolean  "fan"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "consumer_id"
+    t.integer  "brand_id"
   end
 
   create_table "protected_resources", :force => true do |t|

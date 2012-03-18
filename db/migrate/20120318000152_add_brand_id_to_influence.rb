@@ -1,5 +1,5 @@
 class AddBrandIdToInfluence < ActiveRecord::Migration
-  def change
-    add_column :influences, :brand_id, :integer
+  def self.up
+  add_column :influences, :brand_id, :integer
   end
 end

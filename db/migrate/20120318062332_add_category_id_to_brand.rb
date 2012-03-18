@@ -1,5 +1,5 @@
 class AddCategoryIdToBrand < ActiveRecord::Migration
-  def change
+  def self.up
     add_column :brands, :category_id, :integer
   end
 end

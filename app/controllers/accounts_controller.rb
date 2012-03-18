@@ -2,7 +2,7 @@ class AccountsController < ApplicationController
   before_filter :require_authentication, :only => :update
 
   def new
-    redirect_to dashboard_url if authenticated?
+    redirect_to '/consumers/1' if authenticated?
   end
 
   def update
