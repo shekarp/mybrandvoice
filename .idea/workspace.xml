@@ -2,70 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bb18f47-2ce4-44b8-aa16-b31a83bbe4f3" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\controllers\brands_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/brands_controller.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\controllers\categories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\controllers\consumers_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/consumers_controller.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\controllers\influences_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/influences_controller.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\helpers\brands_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/brands_helper.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\helpers\categories_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/categories_helper.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\helpers\consumers_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/consumers_helper.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\helpers\influences_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/influences_helper.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\models\brand.rb" afterPath="$PROJECT_DIR$/app/models/brand.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\models\category.rb" afterPath="$PROJECT_DIR$/app/models/category.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\models\consumer.rb" afterPath="$PROJECT_DIR$/app/models/consumer.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\models\influence.rb" afterPath="$PROJECT_DIR$/app/models/influence.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\brands\_form.html.erb" afterPath="$PROJECT_DIR$/app/views/brands/_form.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\brands\edit.html.erb" afterPath="$PROJECT_DIR$/app/views/brands/edit.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\brands\index.html.erb" afterPath="$PROJECT_DIR$/app/views/brands/index.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\brands\new.html.erb" afterPath="$PROJECT_DIR$/app/views/brands/new.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\brands\show.html.erb" afterPath="$PROJECT_DIR$/app/views/brands/show.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\categories\_form.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/_form.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\categories\edit.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/edit.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\categories\index.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\categories\new.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/new.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\categories\show.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\consumers\_form.html.erb" afterPath="$PROJECT_DIR$/app/views/consumers/_form.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\consumers\edit.html.erb" afterPath="$PROJECT_DIR$/app/views/consumers/edit.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\consumers\index.html.erb" afterPath="$PROJECT_DIR$/app/views/consumers/index.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\consumers\new.html.erb" afterPath="$PROJECT_DIR$/app/views/consumers/new.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\consumers\show.html.erb" afterPath="$PROJECT_DIR$/app/views/consumers/show.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\influences\_form.html.erb" afterPath="$PROJECT_DIR$/app/views/influences/_form.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\influences\edit.html.erb" afterPath="$PROJECT_DIR$/app/views/influences/edit.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\influences\index.html.erb" afterPath="$PROJECT_DIR$/app/views/influences/index.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\influences\new.html.erb" afterPath="$PROJECT_DIR$/app/views/influences/new.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\app\views\influences\show.html.erb" afterPath="$PROJECT_DIR$/app/views/influences/show.html.erb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\config.ru" afterPath="$PROJECT_DIR$/config.ru" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\db\migrate\20120317200113_create_brands.rb" afterPath="$PROJECT_DIR$/db/migrate/20120317200113_create_brands.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\db\migrate\20120317200224_create_categories.rb" afterPath="$PROJECT_DIR$/db/migrate/20120317200224_create_categories.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\db\migrate\20120317203249_create_consumers.rb" afterPath="$PROJECT_DIR$/db/migrate/20120317203249_create_consumers.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\db\migrate\20120317203455_create_influences.rb" afterPath="$PROJECT_DIR$/db/migrate/20120317203455_create_influences.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\db\migrate\20120317205911_create_facebooks.rb" afterPath="$PROJECT_DIR$/db/migrate/20120317205911_create_facebooks.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\db\migrate\20120317214145_add_consumer_id_to_facebook.rb" afterPath="$PROJECT_DIR$/db/migrate/20120317214145_add_consumer_id_to_facebook.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\db\migrate\20120317232400_add_consumer_id_to_influence.rb" afterPath="$PROJECT_DIR$/db/migrate/20120317232400_add_consumer_id_to_influence.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\db\migrate\20120318000152_add_brand_id_to_influence.rb" afterPath="$PROJECT_DIR$/db/migrate/20120318000152_add_brand_id_to_influence.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\db\migrate\20120318062332_add_category_id_to_brand.rb" afterPath="$PROJECT_DIR$/db/migrate/20120318062332_add_category_id_to_brand.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\db\migrate\20120318171115_add_influence_to_brands.rb" afterPath="$PROJECT_DIR$/db/migrate/20120318171115_add_influence_to_brands.rb" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\examples.html" afterPath="$PROJECT_DIR$/public/orangeflex/examples.html" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\images\body-bg.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/body-bg.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\images\bvlogo.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/bvlogo.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\images\bvlogo_cropped.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/bvlogo_cropped.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\images\h3-bg.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/h3-bg.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\images\header-bg.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/header-bg.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\images\item-left.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/item-left.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\images\item-right.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/item-right.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\images\nav-bg.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/nav-bg.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\images\quote.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/quote.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\images\read-more.png" afterPath="$PROJECT_DIR$/public/orangeflex/images/read-more.png" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\index.html" afterPath="$PROJECT_DIR$/public/orangeflex/index.html" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\readme and license.txt" afterPath="$PROJECT_DIR$/public/orangeflex/readme and license.txt" />
-      <change type="MOVED" beforePath="C:\Sites\mybrandvoice\our_stuff\public\orangeflex\styles.css" afterPath="$PROJECT_DIR$/public/orangeflex/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/accounts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/accounts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="mybrandvoice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -678,7 +615,11 @@
       <created>1332093866776</created>
       <updated>1332093866776</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="working">
+      <created>1332096380807</created>
+      <updated>1332096380807</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -740,7 +681,7 @@
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="working" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -756,6 +697,7 @@
     <MESSAGE value="adopted new design" />
     <MESSAGE value="moved our stuff" />
     <MESSAGE value="changes" />
+    <MESSAGE value="working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
