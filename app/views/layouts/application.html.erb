@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <title>Rack::OAuth2 Sample Server (Bearer)</title>
+    <!--[if lt IE9]>
+    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <%= stylesheet_link_tag :all %>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <h1><%= link_to "Rack::OAuth2 Sample Server (Bearer)", root_path %></h1>
+    <div class="container">
+      <%= yield %>
+      <aside>
+        <fb:like href="https://www.facebook.com/pages/RackOAuth2/141477809244105" send="false" width="450" show_faces="true"></fb:like>
+      </aside>
+    </div>
+    <%= render 'layouts/footer' %>
+    <div id="fb-root"></div>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        FB.init({
+          appId: "<%= Auth::Facebook.config[:client_id] %>",
+          cookie: true,
+          xfbml: true,
+          oauth: true
+        });
+      });
+    </script>
+  </body>
+</html>
