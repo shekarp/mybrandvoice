@@ -17,6 +17,7 @@
 
 <% @consumer.influences.each do |influence| %>
     <%= influence.influence %>
+    <%= influence.brand.category.title %>
     <%= influence.brand.name %><br/>
 <% end %>
 

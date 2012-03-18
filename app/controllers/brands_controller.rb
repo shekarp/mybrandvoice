@@ -2,7 +2,8 @@ class BrandsController < ApplicationController
   # GET /brands
   # GET /brands.json
   def index
-    @brands = Brand.all
+    @category = Category.find(params[:category_id])
+    @brands = @category.brands
 
     respond_to do |format|
       format.html # index.html.erb
