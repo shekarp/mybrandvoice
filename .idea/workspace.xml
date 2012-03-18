@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3bb18f47-2ce4-44b8-aa16-b31a83bbe4f3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/categories/show.html.erb" afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/consumers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/consumers/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/orangeflex/styles.css" afterPath="$PROJECT_DIR$/public/orangeflex/styles.css" />
     </list>
     <ignored path="mybrandvoice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,16 +40,16 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/consumers/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="74" selection-start="1506" selection-end="1506" vertical-scroll-proportion="-7.1923075">
+            <state line="7" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.256654">
+            <state line="34" column="19" selection-start="1248" selection-end="1248" vertical-scroll-proportion="-3.2692308">
               <folding />
             </state>
           </provider>
@@ -61,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/orangeflex/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="8" selection-start="666" selection-end="670" vertical-scroll-proportion="-3.42">
+            <state line="2" column="26" selection-start="47" selection-end="47" vertical-scroll-proportion="0.066019416">
               <folding />
             </state>
           </provider>
@@ -73,7 +76,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/categories/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="63" selection-start="2521" selection-end="2521" vertical-scroll-proportion="-16.307692">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -82,7 +85,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="61" selection-start="943" selection-end="943" vertical-scroll-proportion="-7.1923075">
+            <state line="6" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -124,12 +127,12 @@
         <option value="$PROJECT_DIR$/app/models/consumer.rb" />
         <option value="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/public/orangeflex/styles.css" />
-        <option value="$PROJECT_DIR$/app/views/categories/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/categories/show.html.erb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/app/views/consumers/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/categories/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/categories/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/public/orangeflex/styles.css" />
       </list>
     </option>
   </component>
@@ -500,7 +503,11 @@
       <created>1332110624692</created>
       <updated>1332110624692</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="removed footer">
+      <created>1332111495072</created>
+      <updated>1332111495072</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -562,7 +569,7 @@
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed footer" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -580,6 +587,7 @@
     <MESSAGE value="working" />
     <MESSAGE value="buyers guide" />
     <MESSAGE value="changes" />
+    <MESSAGE value="removed footer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -655,20 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/categories/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="63" selection-start="2521" selection-end="2521" vertical-scroll-proportion="-16.307692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="61" selection-start="943" selection-end="943" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="61" selection-start="2464" selection-end="2464" vertical-scroll-proportion="0.0">
@@ -676,23 +670,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/consumers/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="74" selection-start="1506" selection-end="1506" vertical-scroll-proportion="-7.1923075">
+        <state line="6" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/orangeflex/styles.css">
+    <entry file="file://$PROJECT_DIR$/app/views/categories/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="8" selection-start="666" selection-end="670" vertical-scroll-proportion="-3.42">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.256654">
+        <state line="34" column="19" selection-start="1248" selection-end="1248" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/consumers/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/orangeflex/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="26" selection-start="47" selection-end="47" vertical-scroll-proportion="0.066019416">
           <folding />
         </state>
       </provider>
