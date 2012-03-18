@@ -80,4 +80,10 @@ class ConsumersController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  def logout
+    unauthenticate
+
+    redirect_to '/'
+  end
 end

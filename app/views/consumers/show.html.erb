@@ -1,8 +1,17 @@
-<p id="notice"><%= notice %></p>
+<div id="navigation">
+  <ul>
+    <!-- top navigation use selected class for selected item -->
+    <li class="selected">
+      <a href="/consumers/1">Influencer</a></li>
+    <li><a href="/categories">Buyer</a></li>
+    <li><a href="#">Brand Owner</a></li>
 
+  </ul>
+</div>
 
 <!-- left hand main content -->
 <div id="page">
+  <img src="<%= @consumer.picture %>"/>
 
   <h2 id="center">Your Top Brands</h2>
   <ol id="center">
@@ -17,6 +26,7 @@
 
 <!-- start sidebar -->
 <div id="sidebar">
+  <a href="/logout">Logout</a>
 
   <!-- sidebar h3: use <strong> for black text -->
 
@@ -40,9 +50,9 @@
 
 
   <br/>
-  <iframe src="https://www.facebook.com/plugins/like.php?href=YOUR_URL"
-          scrolling="no" frameborder="0"
-          style="border:none; width:450px; height:80px"></iframe>
+  <aside>
+    <fb:like href="https://www.facebook.com/pages/RackOAuth2/141477809244105" send="false" width="450" show_faces="true"></fb:like>
+  </aside>
 
   <%= link_to "New influence", new_consumer_influence_path(@consumer) %>
   <%= link_to 'Edit', edit_consumer_path(@consumer) %> |

@@ -2,6 +2,7 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json
   def index
+    @consumer = Consumer.find(1)
     @categories = Category.all
 
     respond_to do |format|
@@ -13,6 +14,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
+    @consumer = Consumer.find(1)
     @category = Category.find(params[:id])
 
     respond_to do |format|

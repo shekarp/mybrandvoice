@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120318171115) do
+ActiveRecord::Schema.define(:version => 20120318203208) do
 
   create_table "access_tokens", :force => true do |t|
     t.integer  "account_id"
@@ -28,6 +28,15 @@ ActiveRecord::Schema.define(:version => 20120318171115) do
     t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "activities", :force => true do |t|
+    t.text     "text"
+    t.integer  "consumer_id"
+    t.string   "picture"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "category_id"
   end
 
   create_table "auth_facebooks", :force => true do |t|
@@ -81,6 +90,7 @@ ActiveRecord::Schema.define(:version => 20120318171115) do
     t.integer  "age"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "picture"
   end
 
   create_table "facebooks", :force => true do |t|

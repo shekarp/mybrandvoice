@@ -1,6 +1,8 @@
 require 'token_endpoint'
 
 Mybrandvoice::Application.routes.draw do
+  resources :activities
+
   resource  :client_statistic, :only => :show
   resources :protected_resources, :only => [:index, :show, :create, :destroy]
   resources :clients, :only => [:show, :new, :create]
@@ -12,6 +14,8 @@ Mybrandvoice::Application.routes.draw do
   resource :session, :only => :new
   resource :account, :only => :update
   root :to => 'accounts#new'
+
+  match "logout" => "consumers#logout"
 
   resources :facebooks
 
