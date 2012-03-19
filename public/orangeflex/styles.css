@@ -188,6 +188,17 @@ div#page h5 {
 	color:#333333;
 }
 
+div#mainpage{
+    text-align: center;
+    position:absolute;
+    left:200;
+    top:100;
+    background-color: orange;
+    width: 800pt;
+    height: 600pt;
+
+}
+
 /* sidebar + sidebar styles */
 div#sidebar {
 	float:left;
@@ -285,6 +296,8 @@ div#right span{
 /* footer styles */
 div.footer {
 	clear:both;
+    position: absolute;
+    bottom: 10pt;
 	padding:15px 5px;
 	border-top:1px solid #dbdbdb;
 	width:98%;

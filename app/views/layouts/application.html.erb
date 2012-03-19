@@ -11,30 +11,41 @@
 </head>
 <body>
 <div id="wrap">
-  <div id="header">
-    <div id="header-text">
+  <div>
+    <table>
+      <tr>
+        <td width="126" >
+          <!-- img id="logo" src="/orangeflex/images/bvlogo_cropped.png"/ -->
+          <img width="750" id="lin" src="/orangeflex/images/full_logo_white_bckgrnd.jpeg"/>
+        </td>
+      </tr>
+      <tr>
+        <td><h2>Amplify your brand!</h2></td>
+      </tr>
+
+      <tr>
+        <!-- h1><a id="cmpn" href="#"><%= @consumer && @consumer.name ? @consumer.name + "'s" : '' %><span></span></a></h1-->
+        <!-- sub title, text here is transformed to lower case -->
+        <!-- h2>Amplify your brand!</h2-->
+      </tr>
+
+      <tr>
+        <td width="253"> <%= yield %> </td>
+        <td> <img width="253" id="lin" src="/orangeflex/images/js-signin.png"/></td>
+      </tr>
+      <tr>
+        <td> <img id="tw" width="253" src="/orangeflex/images/sign-in-with-twitter_0.png"/></td>
+        <td> <img id="go" width="253" src="/orangeflex/images/google.jpg"/></td>
+      </tr>
+    </table>
 
       <!-- page header - use <span></span> to colour text black, default color orange -->
-      <table>
-        <tr>
-          <td width="126" > <img id="logo" src="/orangeflex/images/bvlogo_cropped.png"/></td>
-          <td>
-            <h1><a id="cmpn" href="#"><%= @consumer && @consumer.name ? @consumer.name + "'s" : '' %><span>brandlify</span></a></h1>
-            <!-- sub title, text here is transformed to lower case -->
-            <h2>You Decide Now</h2>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </div>
+   </div>
 
   <div style="text-align: right">
     <a href="/logout">Logout</a>
   </div>
 
-  <div id="content">
-
-    <%= yield %>
 
     <!-- start footer -->
     <div class="footer">
