@@ -1,6 +1,6 @@
 development: &defaults
-  client_id: 173436109442351
-  client_secret: 13460533f700f1d377e81fae3007c280
+  client_id: some_int_provided
+  client_secret: some key provided
 
 test:
   <<: *defaults
